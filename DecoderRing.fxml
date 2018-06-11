@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60">
+   <children>
+      <AnchorPane layoutX="16.0" layoutY="16.0" prefHeight="569.0" prefWidth="369.0">
+         <children>
+            <FlowPane layoutX="-2.0" prefHeight="570.0" prefWidth="370.0">
+               <children>
+                  <ScrollPane prefHeight="184.0" prefWidth="370.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="TOP_LEFT" prefHeight="277.0" prefWidth="360.0" text="If two people wish to communicate privately over an insecure medium, the sender can use a sharedsecret, called a cipher, to encrypt a message. The recipient can use the same cipher to decrypt itto reveal the original message.One of the oldest (and least complicated) ciphers is known as the Caesar cipher (after Julius Caesar). To use the Caesar cipher, the two people must agree upon a shift value. " wrapText="true">
+                                 <padding>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Century Gothic" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+                  <Separator prefHeight="10.0" prefWidth="370.0" />
+                  <TextArea prefHeight="120.0" prefWidth="370.0" promptText="Type Your Message Here">
+                     <padding>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                     </padding>
+                  </TextArea>
+                  <Separator prefHeight="10.0" prefWidth="370.0" />
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="368.0">
+                     <padding>
+                        <Insets left="7.0" right="7.0" />
+                     </padding>
+                     <children>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="30.0" prefWidth="170.0" text="Shift Value: " textAlignment="CENTER">
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                           <font>
+                              <Font name="Century Gothic Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField alignment="CENTER" prefHeight="30.0" prefWidth="170.0" promptText="Integer Value Here">
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="75.0" prefWidth="368.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="165.0" text="Encrypt">
+                           <font>
+                              <Font name="Century Gothic Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="165.0" text="Decrypt">
+                           <font>
+                              <Font name="Century Gothic Bold" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                     </padding>
+                  </HBox>
+                  <Label alignment="TOP_LEFT" prefHeight="199.0" prefWidth="370.0" text="Label">
+                     <FlowPane.margin>
+                        <Insets />
+                     </FlowPane.margin>
+                     <padding>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                     </padding>
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </FlowPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
